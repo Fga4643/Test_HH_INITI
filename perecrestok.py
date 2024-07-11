@@ -102,7 +102,7 @@ def sveto_cars(svetofor_ind):
             svetofors_cars[svetofor_ind] = 1  # Включение желтого
             time.sleep(timer)  # Таймер желтого
             svetofors_cars[svetofor_ind] = 0  # Включение красного
-        time.sleep(1)  # Можно убрать, внес для снижения нагрузки на железо
+        time.sleep(0.15)  # Можно убрать, внес для снижения нагрузки на железо
 
 
 def sveto_chels(svetofor_ind):
@@ -128,7 +128,7 @@ def sveto_chels(svetofor_ind):
             svetofors_chel[svetofor_ind] = 2  # Включение зеленого
         elif soobch_chel[svetofor_ind][1] == "vikl":  # включение по сигналу красного
             svetofors_chel[svetofor_ind] = 0  # Включение красного
-        time.sleep(1)  # Можно убрать, внес для снижения нагрузки на железо
+        time.sleep(0.15)  # Можно убрать, внес для снижения нагрузки на железо
 
 
 def yprav_imp():  # Внесено для эмуляции жизни
